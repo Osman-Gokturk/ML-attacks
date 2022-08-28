@@ -12,7 +12,7 @@ A short snip of data is here.
 #Features, and a quick look inside
 
 * features_names = ["parents", "has_nurs", "form", "children", "housing", "finance", "social", "health", "label"]
-* 
+
 * parents:['usual', 'pretentious', 'great_pret']
 * data['has_nurs'].unique() #['proper', 'less_proper', 'improper', 'critical', 'very_crit']
 * data['form'].unique() # ['complete', 'completed', 'incomplete', 'foster']
@@ -23,3 +23,8 @@ A short snip of data is here.
 * data['health'].unique() #['recommended', 'priority', 'not_recom']
 * data['label'].unique() #['recommend', 'priority', 'not_recom', 'very_recom', 'spec_prior']
 
+# Data preprossesings:
+* remove rows with missing labels
+* remove or too sparse label value "recommend" as it has only 2 instances.
+* data['label'].value_counts()
+* ![image](https://user-images.githubusercontent.com/71256734/187063770-77059604-581b-4f65-b9f4-9f13a5aabae2.png)
