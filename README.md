@@ -47,5 +47,12 @@ test_set was done for 0.8. . Inıtally there were  12960 rows,  somes were dropp
 
 ## Baseline Accuracy
 Baseline accuracy simply condsider a classifier which does nothing. hense, it refers simply to the frequency of of the labels unique values. actually their squares see https://stats.stackexchange.com/questions/67528/how-do-i-calculate-random-baseline.
-For our case, in the yTest dataset, the frequencies and 
+For our case, in the yTest dataset, the frequencies and baseline accuracy is as following:
+![image](https://user-images.githubusercontent.com/71256734/187066545-bc555d92-73cb-4b7e-a3f9-b620dcd0f19e.png)
+
+## Model of DecisionTreeClassifier
+one import libraries, define the modelName, fit the model on Xtrain and yTrain. Then apply for Xtest. 
+As we have the yTest values, we can invoke for scores. 
+
+
 
