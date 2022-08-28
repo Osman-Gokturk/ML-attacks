@@ -39,4 +39,10 @@ A short snip of data is here.
 
 * Eventually we have a matrix of X data for 22 columns: as for each type we should have one one-hot collumn, we would have  3 parents, 5 nurs,3 form,children 1,housing 3,  finance 2, social 1, health 3, =20. ( it seems 2 "others"  are found in two features.)
 
-* 
+# Train-test split, Model, Fitting, Scores,
+test_set was done for 0.8. . Inıtally there were  12960 rows,  somes were dropped. and the eventual 0.2 Train, 0,8 Test is as following:  
+
+ * XTrain.shape #(2591, 22)
+ * XTest.shape #(10365, 22)
+
+## Baseline Accuracy
