@@ -26,5 +26,12 @@ A short snip of data is here.
 # Data preprossesings:
 * remove rows with missing labels
 * remove or too sparse label value "recommend" as it has only 2 instances.
-* data['label'].value_counts()
-* ![image](https://user-images.githubusercontent.com/71256734/187063770-77059604-581b-4f65-b9f4-9f13a5aabae2.png)
+  * data['label'].value_counts()
+  * ![image](https://user-images.githubusercontent.com/71256734/187063770-77059604-581b-4f65-b9f4-9f13a5aabae2.png)
+* fill missing values in Children data  with 0.
+* if  for other categorical X matrix data, fill with "other"
+
+* children contains 0,1,2,3 more. they have imposed more as "4"
+
+* They have coded label categorical values to numerical classes  as (0,1,2,3). But for the independent or X matrix data, they implemented one-hot-coding.
+* 
