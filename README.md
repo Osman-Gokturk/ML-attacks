@@ -46,3 +46,6 @@ test_set was done for 0.8. . Inıtally there were  12960 rows,  somes were dropp
  * XTest.shape #(10365, 22)
 
 ## Baseline Accuracy
+Baseline accuracy simply condsider a classifier which does nothing. hense, it refers simply to the frequency of of the labels unique values. actually their squares see https://stats.stackexchange.com/questions/67528/how-do-i-calculate-random-baseline.
+For our case, in the yTest dataset, the frequencies and 
+
