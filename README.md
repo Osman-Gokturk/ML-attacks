@@ -32,6 +32,11 @@ A short snip of data is here.
 * if  for other categorical X matrix data, fill with "other"
 
 * children contains 0,1,2,3 more. they have imposed more as "4"
+*  social feature is coded as 1 for problematic, and 0 for other 2  categories.
+*  
 
 * They have coded label categorical values to numerical classes  as (0,1,2,3). But for the independent or X matrix data, they implemented one-hot-coding.
+
+* Eventually we have a matrix of X data for 22 columns: as for each type we should have one one-hot collumn, we would have  3 parents, 5 nurs,3 form,children 1,housing 3,  finance 2, social 1, health 3, =20. ( it seems 2 "others"  are found in two features.)
+
 * 
