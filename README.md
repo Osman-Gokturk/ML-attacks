@@ -2,7 +2,7 @@
 In this repositors we will try to demonstrate ML inference attacks.
 
 # Data:
-The data is the Nursery schoold social status data which is available on the Internet. It has an sahpe of (12960, 9):
+The data is the Nursery schoold social status data which is available on the Internet. It has an sahpe of (12960, 9):8 features and 1 label.
 
 
 A short snip of data is here.
@@ -25,17 +25,17 @@ A short snip of data is here.
 
 # Data preprossesings:
 * remove rows with missing labels
-* remove or too sparse label value "recommend" as it has only 2 instances.
+* remove  too sparse label value "recommend" as it has only 2 instances in the data set.
   * data['label'].value_counts()
   * ![image](https://user-images.githubusercontent.com/71256734/187063770-77059604-581b-4f65-b9f4-9f13a5aabae2.png)
 * fill missing values in Children data  with 0.
 * if  for other categorical X matrix data, fill with "other"
 
-* children contains 0,1,2,3 more. they have imposed more as "4"
-*  social feature is coded as 1 for problematic, and 0 for other 2  categories.
+* children contains 0,1,2,3 more. we replace more as  "4"
+*  "social" feature is coded as 1 for problematic, and 0 for other two  categories. 
 *  
 
-* They have coded label categorical values to numerical classes  as (0,1,2,3). But for the independent or X matrix data, they implemented one-hot-coding.
+* They have coded label categorical values to numerical classes  as (0,1,2,3) [ recall we omited "recommend"ö see above]. But for the independent features or X matrix data, they implemented one-hot-coding ( making an extra feature for each category in the feature).
 
 * Eventually we have a matrix of X data for 22 columns: as for each type we should have one one-hot collumn, we would have  3 parents, 5 nurs,3 form,children 1,housing 3,  finance 2, social 1, health 3, =20. ( it seems 2 "others"  are found in two features.)
 
