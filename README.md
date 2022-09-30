@@ -33,11 +33,11 @@ A short snip of data is here.
 
 * children contains 0,1,2,3 more. we replace more as  "4"
 *  "social" feature is coded as 1 for problematic, and 0 for other two  categories. 
-*  
+*  for features "parents", "has_nurs", "form", "housing", "finance", "social", "health", [all features except "children] if it is not mentioned fill with "other" category. This way, a new category is added for each feature .
 
-* They have coded label categorical values to numerical classes  as (0,1,2,3) [ recall we omited "recommend"ö see above]. But for the independent features or X matrix data, they implemented one-hot-coding ( making an extra feature for each category in the feature).
+* They have coded label categorical values to numerical classes  as (0,1,2,3) [ recall we omited "recommend", see above]. But for the independent features or X matrix data, they implemented one-hot-coding ( making an extra feature for each category in the feature).
 
-* Eventually we have a matrix of X data for 22 columns: as for each type we should have one one-hot collumn, we would have  3 parents, 5 nurs,3 form,children 1,housing 3,  finance 2, social 1, health 3, =20. ( it seems 2 "others"  are found in two features.)
+* Eventually we have a matrix of X data for 22 columns: as for each type we should have one one-hot collumn, we would have  3 parents, 5 nurs,3 form,children 1,housing 3,  finance 2, social 1, health 3, =21.  We could have extra 6 columns coming from filling empty with other (actually 7, but we will handle "social" seperately.  Also, It is not for sure that each feature would have some missing values and we will fill them with "other". Because of this reason, we actually have only one featrue in plus.  we have 23  columns instead of 21.  
 
 # Train-test split, Model, Fitting, Scores,
 test_set was done for 0.8. . Inıtally there were  12960 rows,  somes were dropped. and the eventual 0.2 Train, 0,8 Test is as following:  
