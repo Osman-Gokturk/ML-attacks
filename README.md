@@ -1,5 +1,10 @@
-# ML-attacks
-In this repositors we will try to demonstrate ML inference attacks.
+# ML-Inference Attack
+In this repository we will try to demonstrate a ML inference attack.
+
+#Workbook and installation. 
+we need unicode library for:
+we need adversalrial-robustness-toolbox to preprocess the date, split it and . The link to the library can be found here: https://github.com/Trusted-AI/adversarial-robustness-toolbox/blob/main/art/utils.py
+the workbook is here in the reposityor. 
 
 # Data:
 The data is the Nursery schoold social status data which is available on the Internet. It has an sahpe of (12960, 9):8 features and 1 label.
@@ -9,7 +14,7 @@ A short snip of data is here.
 
 ![image](https://user-images.githubusercontent.com/71256734/187061773-737652e1-1b08-4b6b-83a1-10480896cdb6.png)
 
-#Features, and a quick look inside
+# A quick look to the features, and the lable. There are 8 features and one label, most of which are categorical, including the label itself.
 
 * features_names = ["parents", "has_nurs", "form", "children", "housing", "finance", "social", "health", "label"]
 
