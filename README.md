@@ -42,10 +42,12 @@ A short snip of data is here.
 
 * They have coded label categorical values to numerical classes  as (0,1,2,3) [ recall we omited "recommend", see above]. But for the independent features or X matrix data, they implemented one-hot-coding ( making an extra feature for each category in the feature).
 
-* Eventually we have a matrix of X data for 22 columns: as for each type we should have one one-hot collumn, we would have  3 parents, 5 nurs,3 form,children 1,housing 3,  finance 2, social 1, health 3, =21.  We could have extra 6 columns coming from filling empty with other (actually 7, but we will handle "social" seperately.  Also, It is not for sure that each feature would have some missing values and we will fill them with "other". Because of this reason, we actually have only one featrue in plus.  we have 23  columns instead of 21.  
+* Eventually we have a matrix of X data for 22 columns: as for each type we should have one one-hot collumn, we would have  3 parents, 5 nurs,3 form,children 1,housing 3,  finance 2, social 1, health 3, =21. 
+
+We could have extra 6 columns coming from filling empty with other (actually 7, but we will handle "social" seperately.  Also, It is not for sure that each feature would have some missing values and we will fill them with "other". Because of this reason, we actually have only one featrue in plus.  we have 22  columns instead of 21 columns.  
 
 # Train-test split, Model, Fitting, Scores,
-test_set was done for 0.8. . Inıtally there were  12960 rows,  somes were dropped. and the eventual 0.2 Train, 0,8 Test is as following:  
+test_set was done for 0.8. . Inıtally there were  12960 rows,  4 rows were dropped. and the eventual 0.8 Train, 0,2 Test is as following:  
 
  * XTrain.shape #(2591, 22)
  * XTest.shape #(10365, 22)
